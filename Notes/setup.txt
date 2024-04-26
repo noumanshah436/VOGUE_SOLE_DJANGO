@@ -6,3 +6,36 @@ Python 3.12.3
 
 $ pip3 install pipenv
 
+$ pipenv install
+
+$ pipenv shell
+
+django-admin startproject main .
+pipenv install django-tailwind
+python manage.py tailwind init
+python manage.py tailwind install
+python manage.py startapp my_app
+python manage.py runserver
+python manage.py migrate
+python manage.py runserver
+pipenv install django_browser_reload
+
+*********************************
+
+Setup tailwind using docs:
+
+https://django-tailwind.readthedocs.io/en/latest/installation.html
+
+https://www.youtube.com/watch?v=76n7sqZocSk
+
+*********************************
+
+Now run these commands on separate terminals:
+
+1) 
+pipenv shell
+python manage.py runserver
+
+2) 
+pipenv shell
+python manage.py tailwind start
